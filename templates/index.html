@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <h1>
+        Success!
+    </h1>
+    <table class="table">
+        <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>Rating</th>
+            <th>No. of Ratings</th>
+          </tr>
+          {% for professor in professors %}
+          <tr>
+            <th scope="row">{{ professor.index }} </th>
+            <td>{{ professor.first_name }}</td>
+            <td>{{ professor.last_name }}</td>
+            <td>{{ professor.rating }}</td>
+            <td>{{ professor.no_of_ratings }}</td>
+          </tr>
+          {% endfor %}
+    </table>
+
+</body>
