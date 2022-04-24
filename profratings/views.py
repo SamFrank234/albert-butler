@@ -45,7 +45,7 @@ def get_prof_rating(request):
             "no_of_ratings": finalprof.no_of_ratings,
         }
 
-    print('json-data to be sent: ', data)
+    #print('json-data to be sent: ', data)
 
     return JsonResponse(data)
 
