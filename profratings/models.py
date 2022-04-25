@@ -10,10 +10,10 @@ from django.db import models
 
 class Professor(models.Model):
     index = models.BigIntegerField(blank=True, primary_key=True)
-    first_name = models.TextField(db_column='First Name', blank=True, null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
-    last_name = models.TextField(db_column='Last Name', blank=True, null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
-    rating = models.TextField(db_column='Rating', blank=True, null=True)  # Field name made lowercase.
-    no_of_ratings = models.TextField(db_column='No. of Ratings', blank=True, null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
+    first_name = models.TextField(db_column='first-name', blank=True, null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
+    last_name = models.TextField(db_column='last-name', blank=True, null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
+    rating = models.TextField(db_column='rating', blank=True, null=True)  # Field name made lowercase.
+    no_of_ratings = models.TextField(db_column='no_of_ratings', blank=True, null=True)  # Field name made lowercase. Field renamed to remove unsuitable characters.
 
 
     def get_first_name(self):
@@ -21,7 +21,7 @@ class Professor(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'RateMyProfRatings'
+        db_table = 'rate-my-prof-ratings'
 
 
 class AuthGroup(models.Model):
