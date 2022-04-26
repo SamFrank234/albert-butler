@@ -3,10 +3,10 @@ from django.shortcuts import render
 import json
 from django.contrib.auth.models import User #####
 from django.http import JsonResponse , HttpResponse ####
-from .models import Professor
+from .models import RateMyProfRatings
 
 def index(request):
-    professors = Professor.objects.all()
+    professors = RateMyProfRatings.objects.all()
     context={
         'professors' : professors
     }
@@ -23,7 +23,7 @@ def get_prof_rating(request):
     print(l_name)
 
 
-    professors = Professor.objects.all()
+    professors = RateMyProfRatings.objects.all()
     finalprof = None
 
     for professor in professors:

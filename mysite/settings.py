@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/Users/sam/AlbertButler/rest_api/albert-butler/rmp_data.db',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'rate_my_prof_ratings',
+        'USER': 'postgres',
+        'PASSWORD': 'AlbertTheButler',
+        'HOST': '',
+        'PORT': '5432',
     },
 }
 
