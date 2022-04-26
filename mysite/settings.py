@@ -133,7 +133,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Heroku: Update database configuration from $DATABASE_URL.
-DATABASES['default'] = dj_database_url.config(default='postgresql+psycopg2://postgres:AlbertTheButler@localhost:5432/rate_my_prof_ratings')
+DATABASES['default'] = dj_database_url.config(default='postgresql://postgres:AlbertTheButler@localhost:5432/rate_my_prof_ratings')
 
 
 # Static files (CSS, JavaScript, Images)
